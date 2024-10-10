@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
-to_str = __import__('3-to_str').to_str
+"""
+Module that provides a function to convert a float to a string.
+"""
 
-pi_str = to_str(3.14)
-print(pi_str == str(3.14))
-print(to_str.__annotations__)
-print("to_str(3.14) returns {} which is a {}".format(pi_str, type(pi_str)))
+def to_str(n: float) -> str:
+    """
+    Convert a float to its string representation.
+
+    Args:
+        n (float): The float number to convert.
+
+    Returns:
+        str: The string representation of the float.
+    """
+    return str(n)
