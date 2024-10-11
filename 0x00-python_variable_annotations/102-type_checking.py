@@ -1,30 +1,19 @@
 #!/usr/bin/env python3
-"""
-Module that provides a function to zoom in on an array.
-"""
-
-from typing import List, Tuple
+""" Type Checking  """
+from typing import Tuple, List
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
-    """
-    Return a new list that repeats each element of the input list a 
-    given number of times.
-
-    Args:
-        lst (Tuple): The list of integers to zoom.
-        factor (int, optional): The number of times to repeat each 
-                                element. Defaults to 2.
-
-    Returns:
-        List: A new list with the zoomed elements.
-    """
+    """ Zoom Array """
     zoomed_in: List = [
-        item for item in lst for _ in range(factor)
+        item for item in lst
+        for i in range(factor)
     ]
     return zoomed_in
 
-# Example usage
-array = (12, 72, 91)  # Changed to a tuple for consistency with the type annotation
+
+array = (12, 72, 91)
+
 zoom_2x = zoom_array(array)
+
 zoom_3x = zoom_array(array, 3)
