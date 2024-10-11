@@ -9,8 +9,8 @@ T = TypeVar('T')
 
 
 def safely_get_value(
-    dct: Mapping[Any, T], 
-    key: Any, 
+    dct: Mapping[Any, T],
+    key: Any,
     default: Union[T, None] = None
 ) -> Union[T, None]:
     """
@@ -19,7 +19,8 @@ def safely_get_value(
     Args:
         dct (Mapping[Any, T]): The dictionary to search.
         key (Any): The key to look for.
-        default (Union[T, None], optional): The default value to return if the key is not found. 
+        default (Union[T, None], optional): The default value to return 
+                                            if the key is not found. 
                                             Defaults to None.
 
     Returns:
