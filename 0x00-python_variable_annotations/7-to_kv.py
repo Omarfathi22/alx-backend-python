@@ -5,6 +5,7 @@ Module that provides a function to convert a key and a value to a tuple.
 
 from typing import Union, Tuple
 
+
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """
     Return a tuple containing a string and the square of a number.
