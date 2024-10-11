@@ -5,6 +5,7 @@ Module that provides a function to zoom in on an array.
 
 from typing import List, Tuple
 
+
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """
     Return a new list that repeats each element of the input list a 
