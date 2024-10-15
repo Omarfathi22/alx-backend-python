@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-This module contains an asynchronous coroutine that spawns multiple wait_random coroutines.
+This module contains an asynchronous coroutine that spawns
+multiple wait_random coroutines.
 """
+
 
 import asyncio
 from typing import List
